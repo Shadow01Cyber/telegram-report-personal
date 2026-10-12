@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Personal Plea to Telegram</title>
+<style>
+  :root {
+    --bg: #0e1621; --card: #17212b; --card-2: #1c2936;
+    --ink: #e8eef4; --muted: #8fa3b5; --line: #2a3a4c;
+    --accent: #2aabee; --accent-press: #1d96d8;
+    --danger: #e15456; --radius: 16px;
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex; flex-direction: column; align-items: center;
+    padding: 28px 20px 56px; line-height: 1.6; }
+  .wrap { width: 100%; max-width: 560px; }
+  .top { text-align: center; padding: 12px 0 26px; }
+  .badge { display: inline-flex; align-items: center; gap: 8px;
+    font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--danger); border: 1px solid rgba(225,84,86,.4);
+    background: rgba(225,84,86,.08); padding: 6px 14px; border-radius: 999px; margin-bottom: 18px; }
+  .badge::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--danger); }
+  h1 { margin: 0 0 10px; font-size: 28px; font-weight: 750; letter-spacing: -.4px; }
+  .sub { margin: 0 auto; max-width: 42ch; color: var(--muted); font-size: 15px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+  .card + .card { margin-top: 16px; }
+  .card-head { display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 18px; border-bottom: 1px solid var(--line); background: var(--card-2); }
+  .card-head span { font-size: 12px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+  .card-body { padding: 18px; }
+  .meta { display: grid; gap: 12px; font-size: 14px; }
+  .meta .k { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .08em; display: block; margin-bottom: 2px; }
+  .meta .v { color: var(--ink); word-break: break-word; }
+  .meta .v.mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 13px; }
+  .meta .v a { color: var(--accent); text-decoration: none; }
+  .preview { white-space: pre-wrap; font-size: 13.5px; line-height: 1.65; color: #c8d6e2;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; max-height: 380px; overflow: auto; }
+  .cta { position: sticky; bottom: 0; margin-top: 22px; padding: 14px 0 6px;
+    background: linear-gradient(180deg, rgba(14,22,33,0), var(--bg) 30%); }
+  .btn { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%;
+    padding: 17px 20px; border: none; border-radius: 14px; background: var(--accent); color: #04283f;
+    font-size: 17px; font-weight: 750; text-decoration: none; cursor: pointer;
+    box-shadow: 0 10px 28px rgba(42,171,238,.28); min-height: 56px; }
+  .btn:active { transform: translateY(1px) scale(.99); background: var(--accent-press); }
+  .hint { text-align: center; color: var(--muted); font-size: 12.5px; margin: 12px 0 0; }
+  .hint b { color: var(--ink); }
+  ol.steps { margin: 0; padding: 0 0 0 20px; display: grid; gap: 10px; font-size: 14px; color: #c8d6e2; }
+  ol.steps li::marker { color: var(--accent); font-weight: 700; }
+  ol.steps b { color: var(--ink); }
+  footer { margin-top: 30px; text-align: center; color: var(--muted); font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div class="badge">A personal plea</div>
+    <h1>Please Read This</h1>
+    <p class="sub">A letter from a victim of doxxing. The email below is already written and addressed &mdash; press the button, your mail app opens with everything filled in. You just tap Send.</p>
+  </div>
+  <div class="card">
+    <div class="card-head"><span>Offenders</span></div>
+    <div class="card-body"><div class="meta">
+      <div><span class="k">User</span><span class="v mono">@Rezaking7777 &nbsp;&middot;&nbsp; ID 133259009</span></div>
+      <div><span class="k">Channel</span><span class="v mono">@Godfatherr3 &nbsp;&middot;&nbsp; ID -1001556083571</span></div>
+      <div><span class="k">Offending posts</span><span class="v"><a href="https://t.me/Godfatherr3/2807">t.me/Godfatherr3/2807</a><br><a href="https://t.me/Godfatherr3/2833">t.me/Godfatherr3/2833</a></span></div>
+      <div><span class="k">Violation</span><span class="v">Doxxing of multiple women &mdash; private numbers &amp; photos published without consent; incitement to harass.</span></div>
+    </div></div>
+  </div>
+  <div class="card">
+    <div class="card-head"><span>What happens</span></div>
+    <div class="card-body">
+      <ol class="steps">
+        <li><b>Tap the button</b> &mdash; your email app opens.</li>
+        <li><b>To, subject and body</b> are already filled in.</li>
+        <li><b>Tap Send.</b> That&apos;s it &mdash; delivered to <b>abuse@telegram.org</b>.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-head"><span>Email preview</span><span>abuse@telegram.org</span></div>
+    <div class="card-body"><div class="preview" id="preview"></div></div>
+  </div>
+  <div class="cta">
+    <a class="btn" id="send" href="#">Send the report now</a>
+    <p class="hint">Opens your mail app with <b>To</b>, <b>Subject</b> and <b>Message</b> already filled &mdash; you only press <b>Send</b>.</p>
+  </div>
+  <footer>Made for the victim&apos;s report &middot; No data is collected or stored by this page.</footer>
+</div>
+<script>
+  var TO = "abuse@telegram.org";
+  var SUBJECT = "Doxxing \u2014 my private photos and phone number are being shared without my consent";
+  var BODY = [
+    "Doxxing \u2014 my private photos and phone number are being shared without my consent",
+    "",
+    "",
+    "To whoever is reading this at Telegram,",
+    "",
+    "I don't know who you are, but I'm hoping you're a person who can help. I'm writing this because I don't know what else to do.",
+    "",
+    "My private phone number and my personal photos were posted in a Telegram channel without my permission. I never gave them to anyone for this. I never agreed to this. I woke up one day and my information was just... out there, for anyone to see.",
+    "",
+    "The account doing this is @Rezaking7777 (User ID: 133259009). The channel is @Godfatherr3 (Channel ID: -1001556083571). This person is posting the phone numbers of girls \u2014 real women, real phone numbers, real lives \u2014 without their consent, and then telling other people to harass them.",
+    "",
+    "The posts are here:",
+    "",
+    "https://t.me/Godfatherr3/2807",
+    "https://t.me/Godfatherr3/2833",
+    "",
+    "These aren't just my photos. These are numbers and photos belonging to multiple girls. He's collected them and posted them publicly. He's doxxing women. Me and others.",
+    "",
+    "And it's not just that they posted it. They told other people to contact us. To message us. To harass us. And people are doing it. My phone hasn't stopped. Strangers are calling me, texting me, sending me things I can't unsee. I don't know how many people have my number now. I don't know who has my photos.",
+    "",
+    "I'm scared. I'm scared to answer my phone. I'm scared to leave my house. I can't sleep. Every time a message comes in, my heart drops because I don't know if it's someone I know or a stranger who saw my number in that channel.",
+    "",
+    "I didn't do anything to deserve this. I'm not a public person. I don't have enemies. I'm just someone who existed, and now my whole life has been turned into a public thing I never asked for. And I'm not the only one \u2014 there are other girls in that channel going through the same thing.",
+    "",
+    "I know Telegram gets a lot of reports. I know you probably see hundreds of these every day. But I'm begging you \u2014 please don't scroll past this one. This isn't a random complaint. This is my actual life. And other women's lives.",
+    "",
+    "I'm asking you to:",
+    "1. Please remove those two posts. They're still up right now. Every minute they stay, more people see our information.",
+    "2. Please suspend the account @Rezaking7777 (User ID: 133259009). He's doing this to other women too. He won't stop on his own.",
+    "3. Please keep the account data so that if we decide to go to the police, there's something to give them.",
+    "",
+    "I'm not writing this as a lawyer. I'm not writing this as a company. I'm writing this as a person who is scared and tired and just wants to be left alone.",
+    "",
+    "If you need anything from me \u2014 proof, my ID, anything \u2014 I'll give it. Just please, please do something.",
+    "",
+    "Thank you for reading this far. Thank you for being a human on the other end."
+  ].join("\n");
+  var mailto = "mailto:" + TO + "?subject=" + encodeURIComponent(SUBJECT) + "&body=" + encodeURIComponent(BODY);
+  var sendBtn = document.getElementById("send");
+  sendBtn.href = mailto;
+  document.getElementById("preview").textContent = "Subject: " + SUBJECT + "\n\n" + BODY;
+  window.addEventListener("load", function () {
+    setTimeout(function () { window.location.href = mailto; }, 700);
+  });
+</script>
+</body>
+</html>
